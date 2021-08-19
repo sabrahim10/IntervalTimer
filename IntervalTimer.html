@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+    <title>Interval Timer</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, intial-scale=1"/>
+</head>
+<body>
+    <div class="header"><h1 class="header__logo">Interval Timer</h1></div>
+    <main class="main">
+        <h2 class="heading">Setup</h2>
+        <span class="timer" id="timer">00s</span>
+        <progress 
+            max="10"
+            value="10"
+            class="progress progress--set"
+            id="progressBar"
+        ></progress>
+    <form class="form" method="POST">
+        <label class="form__label" for="exercise">Exercise:</label>
+        <input
+            class="form__input"
+            type="number"
+            name="exercise"
+            id="exercise"
+            value="45"
+        />
+        <span class="units">(Seconds)</span>
+
+        <label class="form__label" for="rest">Rest:</label>
+        <input
+            class="form__input"
+            type="number"
+            name="rest"
+            id="rest"
+            value="15"
+        />
+        <span class="units">(Seconds)</span>
+
+        <label class="form__label" for="sets">Sets:</label>
+        <input
+            class="form__input"
+            type="number"
+            name="sets"
+            id="sets"
+            value="6"
+        />
+        <div class="form__button-container">
+            <button class="button" type="submit">Start!</button>
+        </div>
+
+    </form>
+    </main>
+
+</body>
